@@ -1,1 +1,110 @@
+/* цвет основного текста #212121; */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* цвет фона #E5E5E5 */
+/* вторичный цвет фона "наша команда" #F5F4FA */
+/* цвет фона героя и подвала #2F303A */
 
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-bg-color: #ffffff;
+}
+
+body {
+  background-color: var(--primery-bg-color);
+  color: #757575;
+  font-family: Roboto sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* logo */
+.logo-nav {
+  color: #000000;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+/* site-nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* site-info */
+.site-info .link {
+  color: var(--primery-text-color);
+}
+.site-info .link:hover,
+.site-info .link:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero .title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* our features, our works, */
+.section-title {
+  color: var(--title-text-color);
+}
+/* futer */
+.logo {
+  color: #ffffff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.futer {
+  background-color: #2f303a;
+}
+.futer-text {
+  color: #ffffff;
+}
+.futer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
