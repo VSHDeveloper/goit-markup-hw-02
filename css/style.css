@@ -10,11 +10,11 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primery-bg-color: #ffffff;
+  --primery-wite-color: #ffffff;
 }
 
 body {
-  background-color: var(--primery-bg-color);
+  background-color: var(--primery-wite-color);
   color: #757575;
   font-family: Roboto sans-serif;
 }
@@ -62,7 +62,7 @@ li {
   background-color: #2f303a;
 }
 .hero .title {
-  color: #ffffff;
+  color: var(--primery-wite-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -73,7 +73,7 @@ li {
   text-transform: uppercase;
 }
 .button {
-  color: #ffffff;
+  color: var(--primery-wite-color);
   background-color: var(--accent-color);
   font-family: Roboto;
   font-style: normal;
@@ -89,9 +89,15 @@ li {
 .section-title {
   color: var(--title-text-color);
 }
+.section-text {
+  color: var(--title-text-color);
+}
+.section-subtitle {
+  color: var(--title-text-color);
+}
 /* futer */
 .logo {
-  color: #ffffff;
+  color: var(--primery-wite-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -103,8 +109,12 @@ li {
   background-color: #2f303a;
 }
 .futer-text {
-  color: #ffffff;
+  color: var(--primery-wite-color);
 }
 .futer .link {
   color: rgba(255, 255, 255, 0.6);
+}
+/* portfolio */
+.subtitle {
+  color: var(--title-text-color);
 }
