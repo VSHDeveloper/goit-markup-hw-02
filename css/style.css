@@ -1,8 +1,8 @@
-/* цвет основного текста #212121; */
-/* вторичный цвет текста #757575 */
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
-/* цвет фона #E5E5E5 */
+/* цвет фона  #E5E5E5 */
 /* вторичный цвет фона "наша команда" #F5F4FA */
 /* цвет фона героя и подвала #2F303A */
 
@@ -11,15 +11,19 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-wite-color: #ffffff;
+  --background-color: #e5e5e5;
+  --background-hero-futer: #2F303A;
+  --background-color-team: #F5F4FA;
 }
 
 body {
-  background-color: var(--primery-wite-color);
+  background-color: var(--background-color));
   color: #757575;
   font-family: Roboto sans-serif;
 }
 a {
   text-decoration: none;
+  cursor: default;
 }
 ul,
 li {
@@ -59,7 +63,7 @@ li {
 }
 /* hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-hero-futer);
 }
 .hero .title {
   color: var(--primery-wite-color);
@@ -84,15 +88,19 @@ li {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
-/* our features, our works, */
-.section-title {
+/* features, works, team */
+.features-title{
   color: var(--title-text-color);
 }
-.section-text {
+.title{
   color: var(--title-text-color);
 }
-.section-subtitle {
+.team {
+    background-color: var(--background-color-team);
+}
+.team-title{
   color: var(--title-text-color);
 }
 /* futer */
@@ -106,7 +114,7 @@ li {
   letter-spacing: 0.03em;
 }
 .futer {
-  background-color: #2f303a;
+  background-color: var(--background-hero-futer);
 }
 .futer-text {
   color: var(--primery-wite-color);
@@ -115,6 +123,15 @@ li {
   color: rgba(255, 255, 255, 0.6);
 }
 /* portfolio */
-.subtitle {
+.section-title {
   color: var(--title-text-color);
+}
+.button-nav {
+  color: var(--title-text-color);
+  background-color: var(--background-color-team);
+}
+.button-nav:hover, .button-nav:focus{
+  color: var(--primery-wite-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
