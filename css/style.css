@@ -2,7 +2,7 @@
 /* вторичный цвет текста #212121 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
-/* цвет фона  #E5E5E5 */
+/* цвет фона #FFFFFF  */
 /* вторичный цвет фона "наша команда" #F5F4FA */
 /* цвет фона героя и подвала #2F303A */
 
@@ -10,16 +10,22 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
   --primery-wite-color: #ffffff;
-  --background-color: #e5e5e5;
-  --background-hero-futer: #2F303A;
-  --background-color-team: #F5F4FA;
+  --background-color: #ffffff;
+  --background-hero-futer: #2f303a;
+  --background-color-team: #f5f4fa;
 }
 
 body {
-  background-color: var(--background-color));
-  color: #757575;
+  background-color: var(--background-color);
+  color: var(--primery-text-color);
   font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 a {
   text-decoration: none;
@@ -31,14 +37,18 @@ li {
 }
 
 /* logo */
-.logo-nav {
-  color: #000000;
+.logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.logo-top {
+  color: #000000;
+}
+.logo-doun {
+  color: var(--primery-wite-color);
 }
 .logo-web {
   color: var(--accent-color);
@@ -47,6 +57,10 @@ li {
 /* site-nav */
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -56,11 +70,16 @@ li {
 /* site-info */
 .site-info .link {
   color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-info .link:hover,
 .site-info .link:focus {
   color: var(--accent-color);
 }
+
 /* hero */
 .hero {
   background-color: var(--background-hero-futer);
@@ -68,7 +87,6 @@ li {
 .hero .title {
   color: var(--primery-wite-color);
   font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -80,7 +98,6 @@ li {
   color: var(--primery-wite-color);
   background-color: var(--accent-color);
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
@@ -90,29 +107,50 @@ li {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-/* features, works, team */
-.features-title{
-  color: var(--title-text-color);
-}
-.title{
-  color: var(--title-text-color);
-}
-.team {
-    background-color: var(--background-color-team);
-}
-.team-title{
-  color: var(--title-text-color);
-}
-/* futer */
-.logo {
+.button:hover,
+.button:focus {
   color: var(--primery-wite-color);
-  font-family: Raleway;
-  font-style: normal;
+  background-color: var(--accent-color-hover);
+  font-family: Roboto;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
+
+/* features, works, */
+.features-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* team */
+.team {
+  background-color: var(--background-color-team);
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  text-align: left;
+}
+
+/* futer */
 .futer {
   background-color: var(--background-hero-futer);
 }
@@ -122,16 +160,30 @@ li {
 .futer .link {
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* portfolio */
-.section-title {
-  color: var(--title-text-color);
-}
 .button-nav {
   color: var(--title-text-color);
   background-color: var(--background-color-team);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
 }
-.button-nav:hover, .button-nav:focus{
+.button-nav:hover,
+.button-nav:focus {
   color: var(--primery-wite-color);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section p {
+  font-size: 16px;
+  line-height: 1.9;
 }
